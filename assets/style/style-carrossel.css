@@ -1,0 +1,13 @@
+.container-pai{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.item {
+    width: 300px;
+   
+}
+.item img {
+    width: 100%;
+}
