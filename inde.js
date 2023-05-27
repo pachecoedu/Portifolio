@@ -2,7 +2,7 @@
 var elementoPai = document.getElementById("elemento-pai");
 
 // Número de divs que você deseja criar
-var numeroDivs = 100;
+var numeroDivs = 50;
 
 // Função para criar e animar uma div
 function criarDiv() {
