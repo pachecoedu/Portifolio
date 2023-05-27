@@ -20,7 +20,7 @@ function criarDiv() {
   div.style.height = Math.random() * 10 + "px";
 
   // Definindo a
-  div.style.backgroundColor = "#9624f9b3"; 
+  div.style.backgroundColor = "#9624f9b3";
 
   // Adicionando a classe "chuva" à div
   div.classList.add("chuva");
