@@ -9,47 +9,41 @@ body {
   left: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.video-background {
+/* Estilo CSS */
+.estrelas {
+  position: relative;
+}
+
+.chuva {
+  position: absolute;
+  animation: chuvaAnimacao 4s linear infinite;
+}
+
+@keyframes chuvaAnimacao {
+  10% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+}
+
+.fundo {
+  background-image: url(assets/espaco.webp);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation-name: loop;
-  animation-duration: 6s;
-  /* Duração total do vídeo */
-  animation-delay: 3s;
-  /* Intervalo antes de repetir */
-  animation-iteration-count: infinite;
-}
-
-@keyframes loop {
-  0% {
-    opacity: 0.9;
-    /* Estilos do início da animação */
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.9;
-    /* Estilos do final da animação */
-  }
-}
-
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section {
@@ -67,11 +61,51 @@ section {
   flex-flow: row wrap;
   place-content: space-around;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-content: center;
 }
 
+.card {
+  margin-top: -10%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-info {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.text {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .3s ease-in;
+}
+
+/* Texts */
+.title {
+  justify-content: center;
+  display: flex;
+  top: 0;
+  color: #fffafa;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #fffafa;
+  letter-spacing: 3px;
+  font-size: 2em;
+}
 
 .animacao {
   display: flex;
@@ -95,9 +129,16 @@ section {
   margin-top: 15%;
   margin-left: -15%;
   z-index: 1;
-  color: #c9c9c9;
+  color: #ffffff9c;
   text-align: center;
   height: 30px;
+  transition-duration: 1s;
+}
+
+.card:hover .hover-me {
+  color: #faffff;
+  scale: 1.2;
+  transition-duration: 1s;
 }
 
 .box-animacao {
@@ -124,25 +165,9 @@ section {
   }
 }
 
-.card {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card-info {
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
 /* Buttons */
 .social-media {
-  margin-top: 10%;
+
   font-size: 2em;
   display: flex;
   justify-content: space-around;
@@ -151,30 +176,7 @@ section {
   flex-wrap: wrap;
 }
 
-.text {
-  align-items: center;
-  flex-wrap: wrap;
-  display: flex;
-  cursor: pointer;
-  opacity: 0;
-  transition: all .3s ease-in;
-}
 
-/* Texts */
-.title {
-  justify-content: center;
-  display: flex;
-  top: 0;
-  color: #fffafa;
-  font-size: 3em;
-  font-weight: bold;
-}
-
-.subtitle {
-  color: #fffafa;
-  letter-spacing: 3px;
-  font-size: 2em;
-}
 
 a {
   text-align: center;
@@ -182,7 +184,7 @@ a {
   text-decoration: none;
   width: 100%;
   font-weight: bold;
-  color: #fffafa;
+  color: #faffff;
 }
 
 a:hover {
