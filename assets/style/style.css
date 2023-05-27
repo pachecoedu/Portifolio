@@ -34,12 +34,10 @@ body {
 
   20% {
     opacity: 1;
-    /* Estilos para exibir o vídeo */
   }
 
   80% {
     opacity: 1;
-    /* Estilos para manter o vídeo exibido */
   }
 
   100% {
