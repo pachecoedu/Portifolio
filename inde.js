@@ -2,7 +2,7 @@
 var elementoPai = document.getElementById("elemento-pai");
 
 // Número máximo de divs que você deseja criar
-var numeroMaxDivs = 200;
+var numeroMaxDivs = 50;
 var divsCriadas = 0; // Contador de divs criadas
 
 // Função para criar e animar uma div
