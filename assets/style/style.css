@@ -35,7 +35,7 @@ body {
 }
 
 .fundo {
-  background-image: url(/assets/img/espaco.webp);
+  background-image: url(./assets/img/espaco.webp);
   position: fixed;
   top: 0;
   left: 0;
