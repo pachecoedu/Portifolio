@@ -1,11 +1,25 @@
 body {
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     left: 0;
-    background-image: url(/assets/img/pag-tech/fundo.jpg);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-}
+  }
 
 .alinhamento {
     display: flex;

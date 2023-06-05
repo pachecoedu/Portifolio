@@ -12,6 +12,17 @@ body {
   overflow: hidden;
 }
 
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Estilo CSS */
 .estrelas {
   position: relative;
@@ -34,16 +45,7 @@ body {
   }
 }
 
-.fundo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -2;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 section {
   display: flex;
