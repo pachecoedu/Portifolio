@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    left: 0;
+    background-image: url(/assets/img/pag-tech/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.alinhamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.campo-logo-nome {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.cards-container {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    padding: 5%;
+}
+
+.card img {
+    width: 80%;
+}
+
+.card:hover {
+    background-color: rgba(245, 245, 220, 0.208);
+    border-radius: 20px;
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    width: 20%;
+}
+
+.card-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    padding: 5px 18px 5px;
+}
+
+.redes-sociais img {
+    width: 100%;
+}
+
+.card-sociais:hover {
+    background-color: rgba(245, 245, 220, 0.208);
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}

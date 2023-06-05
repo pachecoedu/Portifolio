@@ -1,0 +1,218 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+ body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-size: 18px;
+   background-color: rgb(2 4 16);
+   ;
+   font-family: 'Roboto', sans-serif;
+   overflow: hidden;
+   color: rgb(30, 29, 29);
+ }
+
+ section {
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   background-image: url(/assets/img/pag-carrossel/janela2.jpg);
+   background-size: contain;
+   background-position: center;
+ }
+
+ .pai-janela-slides {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+ }
+
+ .pai-slides {
+   gap: 12px;
+   display: flex;
+   width: 80%;
+   justify-content: center;
+   height: 100vh;
+ }
+
+ /* relogio*/
+ .relogio {
+   margin-top: 20vh;
+   position: fixed;
+ }
+
+ .relogio-frente {
+   z-index: 1;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 5px solid rgba(255, 255, 255, 0.633);
+   border-bottom-color: transparent;
+   border-left-color: transparent;
+ }
+
+ .ponteiro-pai {
+  margin-left: -10px;
+   z-index: 1;
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+
+ .ponteiro1 {
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   width: 40px;
+   height: 4px;
+   border-radius: 4px;
+ }
+
+ .ponteiro2 {
+   border-radius: 4px;
+   background-color: rgb(255, 255, 255);
+   position: fixed;
+   width: 5px;
+   height: 20px;
+ }
+
+ .relogio-fundo {
+   z-index: 3;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 5px solid rgb(255, 255, 255);
+   border-top-color: transparent;
+   border-right-color: transparent;
+ }
+
+ /* relogio*/
+
+ .item {
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   display: flex;
+   width: 30px;
+   z-index: 1;
+ }
+
+ .item:hover .fundo-imagem {
+   opacity: 1;
+   margin-right: -28px;
+   background-color: rgba(1, 3, 14, 0.827);
+   border-radius: 20px;
+   -webkit-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.481);
+   -moz-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.359);
+   box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.466);
+ }
+
+ .item:hover .fundo-imagem2 {
+   opacity: 1;
+   background-color: rgba(1, 3, 14, 0.827);
+   border-radius: 20px;
+   -webkit-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.481);
+   -moz-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.359);
+   box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.466);
+ }
+
+ .item:hover .fundo-imagem3 {
+   opacity: 1;
+   margin-left: -28px;
+   background-color: rgba(1, 3, 14, 0.827);
+   border-radius: 20px;
+   -webkit-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.481);
+   -moz-box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.359);
+   box-shadow: 32px 29px 54px -24px rgba(255, 255, 255, 0.466);
+ }
+
+ .slide1 {
+   width: 5px;
+   background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(248, 204, 7), rgba(255, 255, 255, 0));
+ }
+
+ .slide2 {
+   width: 17px;
+   background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(202, 67, 81), rgba(255, 255, 255, 0));
+ }
+
+ .slide3 {
+   width: 8px;
+   background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(249, 129, 44), rgba(255, 255, 255, 0));
+ }
+
+ .item:hover {
+   transition: .5s;
+   cursor: pointer;
+   transform: scale(1.3);
+   z-index: 3;
+ }
+
+ .pai-slides .item img {
+   opacity: 0;
+   width: 400px;
+   transition: 0.2;
+ }
+
+ .item:hover img {
+   opacity: 1;
+   width: 600px;
+   transition: 0.5s;
+ }
+
+ .title {
+   font-size: 30px;
+ }
+
+ a {
+   text-decoration: none;
+   color: rgb(248, 242, 242);
+ }
+
+ span {
+
+   opacity: 0;
+ }
+
+ .item:hover span {
+   opacity: 1;
+ }
+
+ .item:hover {
+   opacity: 1;
+ }
+
+ .link1 {
+   opacity: 1;
+
+ }
+
+ .link3 {
+   opacity: 1;
+ }
+
+ @media (max-width: 1150px) {
+  .item:hover img {
+     width: 400px;
+     height: auto;
+   }
+ }
+
+ @media (max-width: 645px) {
+  .item:hover img {
+     width: 300px;
+     height: auto;
+   }
+ }
+
+ @media (max-width: 450px) {
+   .item:hover img {
+     width: 280px;
+     height: auto;
+   }
+ }
