@@ -19,7 +19,7 @@
    width: 100vw;
    display: flex;
    justify-content: center;
-   background-image: url(./assets/img/pag-carrossel/janela2.jpg);
+   background-image: url(../img/pag-carrossel/janela2.jpg);
    background-size: contain;
    background-position: center;
  }
