@@ -1,7 +1,7 @@
 body {
     margin: 0;
     left: 0;
-    background-image: url(/assets/img/pag-tech/fundo.jpg);
+    background-image: url(./assets/img/pag-tech/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
